@@ -1,11 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-<title>Title</title>
-</head>
+﻿body {
+    background-color: lightblue;
+}
 
-<body>
+h1 {
+    color: yellow;
+}
 
-</body>
-</html>
+p {
+    color: white;
+    border: 2px solid gray;
+    padding: 30px;
+    margin: 50px;
+}
+
+ul.a {
+    color: white;
+    list-style-type: circle;
+}
+
+ul.b {
+    color: white;
+    list-style-type: square;
+}
+
+ol.c {
+    color: white;
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    color:white;
+    list-style-type: lower-alpha;
+}
