@@ -1,0 +1,66 @@
+﻿body {
+    font-family: Arial, Helvetica;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction: column;
+    height:fit-content;
+}
+
+header {
+    background-color: dodgerblue;
+    padding: 1em;
+    text-align: center;
+    color:yellow;
+    clear:left;
+}
+
+nav {
+    background-color:saddlebrown;
+    padding: 1em;
+    margin: 0;
+    width: auto;
+}
+
+
+section {
+    width: auto;
+    padding: 1em;
+    color: blue;
+    height: 574px;
+    background-color: lightgrey;
+}
+
+footer {
+    background-color: blue;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    clear: left;
+}
+aside {
+    background-color: grey;
+    color: white;
+    float: right;
+    width:auto;
+    padding:1em;
+    height: 574px;
+}
+
+.wrapper {
+    text-align:center;
+    display:flex;
+}
+.wrapper div {
+    flex: 1;
+}
+h2
+{ text-align: center;}
+img {
+    width: 250px;
+}
+figure {
+    color: black;
+}
+
