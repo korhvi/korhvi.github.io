@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suomen Kansallispuistot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./styles/style2.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./images/kansallispuistologo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container-fluid">
+            <img src="./images/kansallispuistologo.png" alt="Favicon" width="40" height="50">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Etusivu2.html">Koti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Linkit
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./koli.html">Koli</a></li>
+                            <li><a class="dropdown-item" href="./hossa.html">Hossa</a></li>
+                            <li><a class="dropdown-item" href="./pallas.html">Pallas-yllästunturi</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./yhteys.html">Ota yhteyttä</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search_box">
+                        <div>
+                            <input type="text" id="search" onkeypress="handlekeypress()">
+                            <input type="button" id="submit_form" onclick="checkInput()" value="Etsi">
+                        </div>
+                </div>
+                <script>
+                    function checkInput() {
+                        var query = document.getElementById('search').value;
+                        window.find(query);
+                        return true;
+                    }
+                </script>
+            </div>
+        </div>
+    </nav>
+    <div id="Front-hero" role="banner" style="background-image: url('./images/pallastaka.jpg'); width: auto; " >
+            <div class="hero-text">
+                <img class="logo" src="./images/kansa.png" alt="kansa">
+            </div>
+    </div>
+    <div class="main-content">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./images/Kansallispuistologo.png" alt="" width="150" height="150">
+            <h1 class="display-5 fw-bold">Suomen Kansallispuistot</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Kansallispuistot ovat suuria luonnonsuojelualueita, joiden tärkeänä tehtävänä on turvata luonnon monimuotoisuus sekä antaa ihmisille mahdollisuus nauttia ja rentoutua luonnossa. Kansallispuistoissa on merkittyjä reittejä, luontopolkuja ja tulentekopaikkoja. Kansallispuistoissa voi myös yöpyä, sillä niissä on telttailualueita tai yöpymiseen tarkoitettuja rakennuksia. Lisätietoja löydät kunkin kansallispuiston omilta sivuilta.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="row expanded" id="kuvat">
+            <div class="col-sm-4">
+               <div class="pikku" style="background-image: url(./images/kolipikku.jpg);background-size: 100% 100%;height: 35rem;">
+                <div class="teksti">
+                <h3>Koli</h3>
+                <p>Koli on Pohjois-Karjalan korkein vaara Pielisen rannalla Lieksassa. Koli on lähinnä valkoista kvartsiittia, ja sen laella on suuria puuttomia, paljaita valkoisia kalliopintoja. </p>
+                <a class="button ghost" href="./koli.html">Lue lisää </a>
+               </div>
+               </div>
+               </div>
+               <div class="col-sm-4">
+              <div class="pikku" style="background-image: url(./images/Hossapikku.jpg);background-size: 100% 100%;height: 35rem;">
+                <div class="teksti">
+                    <h3>Hossa</h3>
+                    <p>Hossan maisemat avautuvat kävijälle helposti, sen metsiin ja vesille pääsee vaivattomasti. Polkuja riittää patikoida ja pyöräillä, vedet kutsuvat melomaan. </p>
+                    <a class="button ghost" href="./hossa.html">Lue lisää</a>
+                </div>
+              </div>
+        </div>
+                <div class="col-sm-4">
+                <div class="pikku" style="background-image: url(./images/Pallaspikku.jpg);background-size:100% 100%;height: 35rem;">
+                    <div class="teksti">
+                    <h3>Pallas-yllästunturit</h3>
+                    <p>Pallas-Yllästunturin kansallispuisto on Suomen kolmanneksi suurin kansallispuisto, ja sen laajuus on 1 020 neliökilometriä.</p>
+                    <a class="button ghost" href="./pallas.html">Lue lisää</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div class="row expanded">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/63d1129d78/koli/" data-label_1="KOLI" data-label_2="WEATHER" data-days="3" data-theme="pure">KOLI WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+                <div class="col-lg-4">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/65d4429d55/hossa/" data-label_1="HOSSA" data-label_2="WEATHER" data-days="3" data-theme="pure">HOSSA WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+                <div class="col-lg-4">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/67d9623d68/muonio/" data-label_1="MUONIO" data-label_2="WEATHER" data-days="3" data-theme="pure">MUONIO WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+
+            <div class="b-example-divider"></div>
+
+            <div class="bg-white text-secondary px-4 py-5 text-center">
+
+            </div>
+            <div class="b-example-divider mb-0"></div>
+            <div class="porot" id="porot">
+            <img src="./images/porot.png" style="width:100%" alt="porot">
+        </div>
+            <footer>
+
+            <div class="bg-white text-secondary px-4 py-5 text-center">
+                <div class="py-5">
+                    <h1 class="display-5 fw-bold text-dark">Suomen Kansallispuistot</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <p class="fs-5 mb-4"> Sivut tehnyt @Ville.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </footer>
+</body>
+</html>
