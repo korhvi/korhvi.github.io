@@ -1,0 +1,149 @@
+﻿
+html {
+    margin:0 ;
+    font-size: 100%;
+ 
+    box-sizing: border-box;
+}
+
+
+
+.small-centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.85em;
+    margin: 1rem;
+    font-size: 0.9rem;
+    background-color: #000000;
+    color: #fff;
+    position: relative;
+}
+
+a:hover{
+    color: red;
+}
+
+.ghost {
+    background: none;
+    border: 0.2rem solid #ffffff;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    margin-top: 0;
+    position: relative;
+}
+
+.ghost:hover{
+    opacity: 0.7;
+}
+
+#Front-hero {
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+#Front-hero .hero-text {
+        max-width: 35%;
+        transform: translate(-50%, -50%);
+        position:absolute;
+        top: 50%;
+        left: 50%;
+    }
+.logo {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.teksti {
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+color: #ffffff;
+margin: auto;
+  width: 50%;
+  margin-top: 20%;
+  text-align:center;
+  text-shadow: 1px 1px rgb(1, 1, 1);
+  position:relative;
+  top: 30%;
+
+
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #ff219b;
+    color: white;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+
+
+
+#kuvat .pikku {
+    padding: 0;
+    position: relative;
+}
+
+    #kuvat .pikku:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    #kuvat .pikku:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        transition: background-color 0.5s ease;
+    }
+
+    #kuvat .pikku:hover {
+        background-size: 155%;
+        transition: background-size 0.5s ease-in-out;
+       
+    }
+
+        #kuvat .pikku:hover:before {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+.row {
+    --bs-gutter-x: 0rem;
+}
